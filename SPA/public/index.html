@@ -21,7 +21,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900,900i%7CLibre+Baskerville:400,400i,700' rel='stylesheet' type='text/css'>
 
 </head>
-<body >
+<body onload= >
 
     <div id="wrapper" class="wrapper">
 
@@ -229,8 +229,8 @@
 </div>
 <div class="container">
 	<header class="heading text-center">
-		<p>We are helping</p>
-		<h2>Featured causes</h2>
+		<p></p>
+		<h2>Member Spotlight</h2>
 	</header>
 <div class="owl-carousel posts" data-slideshow-settings='{"responsive":{"0":{"items":1}, "767":{"items":2}, "992":{"items":2}, "1200":{"items":3}}, "margin":15, "dots":false}'>
 	<div class="post post-card">
@@ -594,7 +594,7 @@
 							<img src="/public/images/events-photo-1.jpg" width="1000" height="550" alt="">
 						</div>
 						<div class="post-header-inner">
-							<h3><a href="event.html">Dance contest for charity</a></h3>
+							<h3><a href="/events" id="summary0"></a></h3>
 							<div class="post-meta">
 								<div class="post-meta-item">
 									<i class="fa fa-clock-o"></i> 16 - 20
@@ -604,7 +604,7 @@
 								</div>
 							</div>
 						</div>
-						<a href="event.html" class="btn btn-lg btn-default">Join</a>
+						<a href="/events" class="btn btn-lg btn-default">Join</a>
 					</header>
 					<div class="countdown" data-countdown="2018/05/15"></div>
 				</div>
@@ -616,7 +616,7 @@
 							<div class="post-meta post-date">
 								<i class="fa fa-calendar"></i> Jun 11<br> 2018
 							</div>
-							<h3><a href="event.html">The Berlin charity concert</a></h3>
+							<h3><a href="" id="summary1"></a></h3>
 							<div class="post-meta">
 								<div class="post-meta-item">
 									<i class="fa fa-clock-o"></i> 18 - 20
@@ -632,7 +632,7 @@
 							<div class="post-meta post-date">
 								<i class="fa fa-calendar"></i> Jul 15<br> 2018
 							</div>
-							<h3><a href="event.html">Let's сlean our parks</a></h3>
+							<h3><a href="event.html" id="summary2"></a></h3>
 							<div class="post-meta">
 								<div class="post-meta-item">
 									<i class="fa fa-clock-o"></i> 10 - 16
@@ -648,7 +648,7 @@
 							<div class="post-meta post-date">
 								<i class="fa fa-calendar"></i> Aug 21<br> 2018
 							</div>
-							<h3><a href="event.html">Visit children in a hospice</a></h3>
+							<h3><a href="event.html" id="summary3"></a></h3>
 							<div class="post-meta">
 								<div class="post-meta-item">
 									<i class="fa fa-clock-o"></i> 10 - 16
@@ -662,7 +662,7 @@
 					<div class="post post-event">
 						<header class="post-header">
 							<div class="post-meta post-date"><i class="fa fa-calendar"></i> Sep 27<br> 2018</div>
-							<h3><a href="event.html">Tree Planting and Forest Cleaning</a></h3>
+							<h3><a href="event.html"id="summary4"></a></h3>
 							<div class="post-meta">
 								<div class="post-meta-item">
 									<i class="fa fa-clock-o"></i> 10 - 16
@@ -717,25 +717,23 @@
             <div class="site-footer-inner">
                 <div class="container">
                     <div class="row">
-                        <div class="col col-lg-4 col-md-4 col-sm-6">
-                            <h3>Get in touch</h3>
-                            <p>Unde sunt sed cupiditate quaerat saepe inventore, qui iste perferendis dolorem provident quidem repellat reiciendis repellendus.</p>
+                        <div class="col col-lg-6 col-md-6 col-sm-6">
+                            <h3>Connect With Us</h3>
                             <div class="contacts-info">
-                                <p><i class="fa fa-phone"></i> (205) 123 456 789 – 888</p>
-                                <p><i class="fa fa-envelope-open-o"></i> info@company.com</p>
-                            </div>
+                                <p><i class="fa fa-envelope"></i> info@ulmsyp.org </p>
+							</div>
+							<p> We are on all social media platforms!!!</p>
                             <ul class="social-nav">
-                                <li><a href=""><i class="fa fa-vimeo"></i></a></li>
-                                <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                <li><a href=""><i class="fa fa-google"></i></a></li>
+                                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/groups/sulyp"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href=""><i class="fab fa-snapchat-square"></i></a></li>
                             </ul>
                         </div>
-                        <div class="col col-lg-4 col-md-4 col-sm-6">
+                        <div class="col col-lg-6 col-md-6 col-sm-6">
                             <h3>Subscribe to our newsletter</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iste facere aperiam? Porro quaerat, magni blanditiis assumenda ullam delectus, laborum.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, illo?</p>
+                            <p>Want to stay up to date on events, news, and opportunities?</p>
+                            <p>Subscribe to our email list!</p>
                             <form class="subscribe-form">
                                 <div class="form-group">
                                     <input type="email" class="form-control" placeholder="mail@yoursite.com" required>
@@ -743,20 +741,7 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="col col-lg-4 col-md-4 col-sm-12">
-                            <a href="contact.html" class="btn-map">
-                                <span>
-                                    <i class="fa fa-map-marker"></i>
-                                    Find nearest centre
-                                </span>
-                            </a>
-                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="site-footer-bar">
-                <div class="container no-padding text-center">
-                    <div class="copyright">Copyright 2017 ©. All Rights Reserved. Handcrafted by <a href="https://themeforest.net/user/themepatico">Themepatico</a></div>
                 </div>
             </div>
         </footer>
@@ -772,7 +757,15 @@
     <script src="/public/scripts/plugins.js"></script>
 
     <!-- Main js -->
-    <script src="/public/scripts/main.js"></script>
+	<script src="/public/scripts/main.js"></script>
+	
+	<!--Goodle Api-->>
+	<script src="/public/scripts/Events.js"></script>
+	<script async defer src="https://apis.google.com/js/api.js"
+	onload="this.onload=function(){};handleClientLoad()"
+	onreadystatechange="if (this.readyState === 'complete') this.onload()">
+	</script>
+	
 
 </body>
 </html>
