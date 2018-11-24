@@ -1,8 +1,8 @@
 require('dotenv').config();
 
        // Client ID and API key from the Developer Console
-       var CLIENT_ID = '397751827773-c41n4uh4677k5lg8thpa16editbgrvnc.apps.googleusercontent.com';
-       var API_KEY = 'AIzaSyCJAndH7dorZXWD5KntoP2gySPjt5qe5QE';
+       var CLIENT_ID = 
+       var API_KEY = 
  
        // Array of API discovery doc URLs for APIs used by the quickstart
        var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
