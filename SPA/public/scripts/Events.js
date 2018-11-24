@@ -1,8 +1,7 @@
-require('dotenv').config();
 
        // Client ID and API key from the Developer Console
-       var CLIENT_ID = 
-       var API_KEY = 
+       var CLIENT_ID ;
+       var API_KEY  ;
  
        // Array of API discovery doc URLs for APIs used by the quickstart
        var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
@@ -92,14 +91,14 @@ require('dotenv').config();
            'orderBy': 'startTime'
          }).then(function(response) {
            var events = response.result.items;
-           appendPre('Upcoming events:');
+           //appendPre('Upcoming events:');
  
            if (events.length > 0) {
              for (i = 0; i < events.length; i++) {
                let event=events[i];
-              var eventTage = document.getElementById(`summary${i}`);
-              var textContent = document.createTextNode(events.summary);
-              pre.appendChild(textContent);
+              var eventTag = document.getElementById(`summary${i}`);
+              var textContent = document.createTextNode(event.summary);
+              eventTag.appendChild(textContent);
              }
            } else {
              console.log('no events found ')
