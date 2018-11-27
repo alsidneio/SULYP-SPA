@@ -49,9 +49,10 @@ App = (function($) {
 		};
 		var init = function() {
 			_$el.each(function() {
-				var	self = $(this);
+				var	self = $( );
 				var settings = self.data('slideshow-settings');
 				self.owlCarousel($.extend(Object.create(_config), settings));
+				
 			});
 		}
 		return {

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node ./dist/server.js",
-    "build": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development",
+    "buildDev": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development --config webpack.dev.config.js",
+    "buildProd": "rm -rf dist && webpack --mode production --config webpack.server.config.js && webpack --mode production --config webpack.prod.config.js",
     "compile": "node-sass --include-path sass ./src/styles/batch.scss ./src/styles/main.css "
   },
   "repository": {
