@@ -5,7 +5,7 @@ module.exports = {
   entry: {
     styles: './src/index.js',
     main: './src/scripts/main.js',
-    plugins:'./src/scripts/plugins.js',
+   // plugins:'./src/scripts/plugins.js',
     map:'./src/scripts/map-objects-data.js'
 
   },
@@ -56,7 +56,9 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
         $: 'jquery',
-        jQuery: 'jquery'
-      })
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+        "window.$": "jquery"
+    })
   ]
 }

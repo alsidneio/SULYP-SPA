@@ -1,3 +1,4 @@
+import './plugins.js'
 var App = window.App || {};
 
 App = (function($) {
@@ -49,15 +50,12 @@ App = (function($) {
 		};
 		var init = function() {
 			_$el.each(function() {
-				var	self = $( );
+				var	self = $(this);
 				var settings = self.data('slideshow-settings');
 				self.owlCarousel($.extend(Object.create(_config), settings));
-				
 			});
 		}
-		return {
-			init: init
-		}
+		return { init: init	}
 	})();
 	
 	// COUNTDOWN
