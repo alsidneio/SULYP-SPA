@@ -1,4 +1,11 @@
-import './plugins.js'
+import 'owl.carousel';
+import 'jquery-countdown';
+import 'tooltip';
+import 'magnific-popup';
+import 'jquery-validation';
+
+
+
 var App = window.App || {};
 
 App = (function($) {

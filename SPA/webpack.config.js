@@ -5,7 +5,7 @@ module.exports = {
   entry: {
     styles: './src/index.js',
     main: './src/scripts/main.js',
-   // plugins:'./src/scripts/plugins.js',
+    plugins:'./src/scripts/plugins.js',
     map:'./src/scripts/map-objects-data.js'
 
   },
@@ -16,6 +16,13 @@ module.exports = {
   },
   target: 'web',
   devtool: 'inline-source-map',
+  resolve: {
+    modules:['node_modules'],
+    alias: {
+        'owl.carousel': 'owl.carousel/dist/owl.carousel.min.js',
+        'tooltip': 'jquery-tooltip/jquery.tooltip.min.js'
+    }
+  },
   module: {
     rules: [
       {
