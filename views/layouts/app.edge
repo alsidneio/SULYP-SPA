@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Young Professionals - ULMS</title>
+
+    <!-- Plugins css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/plugins.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+
+    <!-- Leaflet CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin=""/>
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="styles/main.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700,700i,900,900i%7CLibre+Baskerville:400,400i,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body onload= >
+
+    <div id="wrapper" class="wrapper">
+
+        <!-- BEGIN HEADER -->
+        <header class="site-header">
+            <div class="site-header-inner">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/YP_logo_white.png" width="214" height="54" alt="YP-logo"></a>
+                    </div>
+                    <nav class="main-nav">
+                        <ul>
+                            <li class="main-nav-item active">
+                                <a class="main-nav-link" href="/">Home</a>
+                            </li>
+                            <li class="main-nav-item ">
+								<a class="main-nav-link" href="/about">About</a>
+                            </li>
+                            <li class="main-nav-item main-nav-item-parent ">
+                                <a class="main-nav-link" href="/join">Get Involved</a>
+                                <ul>
+                                    <li><a href="join.html#member">Become a Member</a></li>
+                                    <li><a href="causes-with-sidebar.html">Join a Committee</a></li>
+                               
+                                    <li><a href="donate.html">Donate</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-nav-item main-nav-item-parent ">
+                                <a class="main-nav-link" href="events.html">Events</a>
+                                <ul>
+                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href="events-with-sidebar.html">Events with sidebar</a></li>
+                                    <li><a href="event.html">Event</a></li>
+                                </ul>
+                            </li>
+                            <li class="main-nav-item ">
+                                <a class="main-nav-link" href="/contact">Contact</a>
+                            </li>
+                        </ul>
+                        <button type="button" class="main-nav-toggle-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </nav>
+                    <button type="button" class="user-nav-toggle-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        @!section('content')
+
+        <!-- BEGIN FOOTER -->
+        <footer class="site-footer">
+            <div class="site-footer-inner">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col col-lg-4 col-md-4 col-sm-4">
+                            <h3>Connect With Us</h3>
+                            <div class="contacts-info">
+                                <p><i class="fa fa-envelope"></i> info@ulmsyp.org </p>
+							</div>
+							<p> We are on all social media platforms!!!</p>
+                            <ul class="social-nav">
+                                <li><a href="https://www.instagram.com/thesulyp/"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/groups/sulyp"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="https://www.snapchat.com/add/thesulyp"><i class="fab fa-snapchat-square"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col col-lg-4 col-md-4 col-sm-4">
+                            <h3>Subscribe to our newsletter</h3>
+                            <p>Want to stay up to date on events, news, and opportunities?</p>
+                            <p>Subscribe to our email list!</p>
+                            <form class="subscribe-form">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="mail@yoursite.com" required>
+                                    <button><i class="fa fa-send"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+        
+    </div>
+
+    <!-- Leaflet JS -->
+	<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+    <script src="scripts/map-objects-data.js"></script>
+
+    <!-- Plugins js -->
+    <script src="scripts/plugins.js"></script>
+
+    <!-- Main js -->
+    <script src="scripts/main.js"></script>
+    
+</body>
+</html>

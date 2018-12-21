@@ -1,0 +1,29 @@
+{
+  "name": "sulyp-spa-2018",
+  "version": "1.0.0",
+  "description": "The official site for the Young Professionals chapter of the  Urban League of Metropolitan Seattle  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alsidneio/SULYP-SPA.git"
+  },
+  "author": "Alsidneio Bell, I",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alsidneio/SULYP-SPA/issues"
+  },
+  "homepage": "https://github.com/alsidneio/SULYP-SPA#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "express-edge": "^1.0.0",
+    "googleapis": "^27.0.0",
+    "nodemon": "^1.18.6",
+    "paypal-checkout": "^4.0.239",
+    "request": "^2.88.0"
+  }
+}
