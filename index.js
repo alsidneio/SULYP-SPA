@@ -3,7 +3,7 @@ const app = express();
 const expressEdge= require('express-edge');
 const path = require("path");
 require('dotenv').config();
-const bodyParser= require('body-parser')
+const bodyParser= require('body-parser');
 
 
 //public folder for static assets
@@ -21,14 +21,14 @@ app.get('/about', (req,res)=>{
 });
 
 app.get('/join', (req,res)=>{
-    res.render('join')
+    res.render('join');
 });
 
 app.get('/contact', (req,res)=>{
-    res.render('contact')
+    res.render('contact');
 });
 
 
 
 
-//app.listen(port, ()=> console.log(`Web Server started on port: ${port}`));
+app.listen(process.env.PORT ||4000, ()=> console.log(`Web Server started `));
