@@ -10,10 +10,10 @@ const bodyParser= require('body-parser');
 app.use(express.static('public'));
 
 app.use(expressEdge);
-app.set('views', `${__dirname}/views`);
+app.set('views', `${__dirname}/../views`);
 
 app.get('/', (req,res)=>{
-    res.render('index');
+    res.render('index');;
 });
 
 app.get('/about', (req,res)=>{
