@@ -1,0 +1,68 @@
+@layout('layouts.app');
+
+@section('content')
+<main class="site-content">
+
+    <div class="container no-top-padding">
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Get Involved</a></li>
+            <li class="active">Become a Member</li>
+        </ol>
+        <div class="container text-center section">
+                <h2 id="member">Become a Member</h2>
+                <hr>
+                <form action="/signup/submit" method="POST" class="new-member-form">
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <input type='text' class="form-control" name="first_name" placeholder="First Name">
+                        </div>
+                        <div class=" form-group col">
+                                <input type='text' class="form-control" name="last_name" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class=" form-group col">
+                                <input type='email' class="form-control" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    
+                    <h4 class="text-left"><b>Address</b></h4>
+                    <div class="form-row">
+                        <div class="form-group col">
+                                <input type='text' class="form-control" name="street_address" placeholder="Street Address">
+                        </div>
+                        <div class="form-group col">
+                                <input type='text' class="form-control" name="apartment_num" placeholder="Apt. Number">  
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col">
+                                <input type= "text" class="form-control" name="city" placeholder="City">  
+                        </div>
+                        <div class="form-group col">
+                                <input type= "text" class="form-control" name="state" placeholder= "State">
+                        </div>
+                        <div class="form-group col">
+                                <input type= "text" class="form-control" name="zip_code" pattern="[0-9]{5}" placeholder="Zip Code">
+                        </div>
+                    </div> 
+                    <H4 class="text-left"><b>Employment Information</b></h4>
+                    <div class="form-row">
+                            
+                            <div class="form-group col">
+                                <input type='text' class="form-control" name="employer" placeholder="Employer">
+                            </div>
+                            <div class=" form-group col">
+                                    <input type='text' class="form-control" name="position_title" placeholder="Position">
+                            </div>
+                    </div>
+                    <div class="text-right">
+                            <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                    </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</main>
+@endsection

@@ -4,14 +4,14 @@ const expressEdge= require('express-edge');
 const path = require("path");
 require('dotenv').config();
 const bodyParser= require('body-parser');
-
+const db = require('./database/models/newMember')
 
 //public folder for static assets
 app.use(express.static('public'));
-
 app.use(expressEdge);
-app.set('views', `${__dirname}/../views`);
-
+app.set('views', `${__dirname}/views`);
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:true}))
 app.get('/', (req,res)=>{
     res.render('index');;
 });
@@ -27,6 +27,10 @@ app.get('/join', (req,res)=>{
 app.get('/contact', (req,res)=>{
     res.render('contact');
 });
+app.get('/signup', (req,res)=>{
+    res.render('signup');
+});
+app.post('/signup/submit',db.addMember)
 
 
 
