@@ -30,7 +30,6 @@ app.get('/contact', (req,res)=>{
 app.get('/signup', (req,res)=>{
     res.render('signup');
 });
-app.post('/signup/submit',db.addMember)
 
 
 
