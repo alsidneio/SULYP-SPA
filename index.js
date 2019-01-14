@@ -29,6 +29,9 @@ app.get('/contact', (req,res)=>{
 app.get('/register', (req,res)=>{
     res.render('register');
 });
+app.get('/donate', (req,res)=>{
+    res.render('donate');
+});
 
 
 
