@@ -4,7 +4,6 @@ const expressEdge= require('express-edge');
 const path = require("path");
 require('dotenv').config();
 const bodyParser= require('body-parser');
-const db = require('./database/models/newMember')
 
 //public folder for static assets
 app.use(express.static('public'));
@@ -27,9 +26,11 @@ app.get('/join', (req,res)=>{
 app.get('/contact', (req,res)=>{
     res.render('contact');
 });
-app.get('/signup', (req,res)=>{
-    res.render('signup');
+app.get('/register', (req,res)=>{
+    res.render('register');
 });
+
+
 
 
 

@@ -3352,3 +3352,7 @@ label.error {
 .white-border{
   border-color: #fff;
 }
+
+iframe{
+border:0;
+}
