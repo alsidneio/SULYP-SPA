@@ -29,7 +29,15 @@ app.get('/contact', (req,res)=>{
 app.get('/register', (req,res)=>{
     res.render('register');
 });
-
+app.get('/donate', (req,res)=>{
+    res.render('donate');
+});
+app.get('/thisweek', (req,res)=>{
+    res.render('thisweek');
+});
+app.get('/calendar', (req,res)=>{
+    res.render('calendar');
+});
 
 
 

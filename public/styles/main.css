@@ -3353,6 +3353,7 @@ label.error {
   border-color: #fff;
 }
 
-iframe{
-border:0;
+.charity-quote{
+  font-size:24px;
 }
+
