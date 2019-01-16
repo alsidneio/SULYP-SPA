@@ -4,6 +4,7 @@ const expressEdge= require('express-edge');
 const path = require("path");
 require('dotenv').config();
 const bodyParser= require('body-parser');
+const inquiry = require('./public/scripts/inquiry')
 
 //public folder for static assets
 app.use(express.static('public'));
@@ -37,6 +38,14 @@ app.get('/thisweek', (req,res)=>{
 });
 app.get('/calendar', (req,res)=>{
     res.render('calendar');
+});
+
+app.post('/inquiry', (req,res)=>{
+    let sender = `${req.body.name}`;
+    // the email function is imported from email.js it includes all 
+    // the info from the user to be sent in an email
+    inquiry(sender, req.body.email,req.body.message);
+    res.redirect('/#contact');
 });
 
 
