@@ -45,7 +45,7 @@ app.post('/inquiry', (req,res)=>{
     // the email function is imported from email.js it includes all 
     // the info from the user to be sent in an email
     inquiry(sender, req.body.email,req.body.message);
-    res.redirect('/#contact');
+    res.redirect('/');
 });
 
 

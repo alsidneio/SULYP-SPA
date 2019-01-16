@@ -8,8 +8,7 @@ const inquiry = (sender,inquiryEmail,inquiryMessage) =>{
         process.env.CLIENT_SECRET,
         process.env.REDIRECT  
     );
-    
-    
+     
     oauth2Client.setCredentials({
         refresh_token: process.env.RERFRESH_TOKEN,
     });
@@ -41,6 +40,7 @@ const inquiry = (sender,inquiryEmail,inquiryMessage) =>{
         error ? console.log(error) : console.log(response);
         smtpTransport.close();
     });
+
 }
 
 
