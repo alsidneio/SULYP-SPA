@@ -39,6 +39,9 @@ app.get('/thisweek', (req,res)=>{
 app.get('/calendar', (req,res)=>{
     res.render('calendar');
 });
+app.get('/interest-form', (req,res)=>{
+    res.render('interest-form');
+})
 
 app.post('/inquiry', (req,res)=>{
     let sender = `${req.body.name}`;
@@ -52,4 +55,4 @@ app.post('/inquiry', (req,res)=>{
 
 
 
-app.listen(process.env.PORT ||4000, ()=> console.log(`Web Server started `));
+app.listen(process.env.PORT || 4000, ()=> console.log(`Web Server started `));
