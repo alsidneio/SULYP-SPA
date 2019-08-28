@@ -25,15 +25,14 @@
     "dotenv": "^6.2.0",
     "express": "^4.17.1",
     "express-edge": "^1.0.0",
-    "googleapis": "^27.0.0",
     "moment": "^2.24.0",
     "nodemailer": "^5.1.1",
     "nodemon": "^1.19.1",
     "package.json": "^2.0.1",
-    "paypal-checkout": "^4.0.273",
-    "pg": "^7.11.0",
+    "paypal-checkout": "^4.0.284",
+    "pg": "^7.12.1",
     "request": "^2.88.0",
-    "uuid": "^3.3.2",
+    "uuid": "^3.3.3",
     "xoauth2": "^1.2.0"
   },
   "devDependencies": {

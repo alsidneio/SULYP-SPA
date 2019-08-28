@@ -4,7 +4,6 @@ const expressEdge= require('express-edge');
 const path = require("path");
 require('dotenv').config();
 const bodyParser= require('body-parser');
-const inquiry = require('./public/scripts/inquiry')
 
 //public folder for static assets
 app.use(express.static('public'));
@@ -41,6 +40,9 @@ app.get('/calendar', (req,res)=>{
 });
 app.get('/interest-form', (req,res)=>{
     res.render('interest-form');
+})
+app.get('/upcoming', (req,res)=>{
+    res.render('upcoming');
 })
 
 app.post('/inquiry', (req,res)=>{
