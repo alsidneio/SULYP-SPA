@@ -4,6 +4,7 @@ const expressEdge= require('express-edge');
 const path = require("path");
 require('dotenv').config();
 const bodyParser= require('body-parser');
+const authRoutes = require('./routes/wildApricot');
 
 //public folder for static assets
 app.use(express.static('public'));
@@ -12,7 +13,7 @@ app.set('views', `${__dirname}/views`);
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.get('/', (req,res)=>{
-    res.render('index');;
+    res.render('index');
 });
 
 app.get('/about', (req,res)=>{
@@ -40,21 +41,13 @@ app.get('/calendar', (req,res)=>{
 });
 app.get('/interest-form', (req,res)=>{
     res.render('interest-form');
-})
+});
 app.get('/upcoming', (req,res)=>{
     res.render('upcoming');
-})
-
-app.post('/inquiry', (req,res)=>{
-    let sender = `${req.body.name}`;
-    // the email function is imported from email.js it includes all 
-    // the info from the user to be sent in an email
-    inquiry(sender, req.body.email,req.body.message);
-    res.redirect('/');
 });
-
-
-
-
+app.post('/', (req,res) =>{
+    //handle with passport
+    res.send("accessing wildapricot API");
+});
 
 app.listen(process.env.PORT || 4000, ()=> console.log(`Web Server started `));
