@@ -3357,3 +3357,34 @@ label.error {
   font-size:24px;
 }
 
+.event-description{
+  margin-left: 50px;
+}
+.event-description img
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.container-custom{
+  width: 1500px;
+}
+#poco{
+  border-left: #790202 solid 1px;
+}
+#BBJ{
+  border-right: #790202 solid 1px;
+}
+
+#BBJ-button{
+  background-color: #0b415d;
+  border: #edb046 2px solid;
+}
+#poco-button{
+  background-color: #4b2467;
+  border: #FFF solid 3px;
+}
+.event-buttons{
+  margin-top:8px;
+}
