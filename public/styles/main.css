@@ -3390,6 +3390,16 @@ label.error {
   margin-top:8px;
 }
 
+.positionDescription{
+  margin-top: 8rem;
+}
+
+aside ul{
+ list-style: none;
+ padding-inline-start: 20px;
+}
+
+
 @media (max-width: 767px) {
 .event-description{
   margin-left: 0px;
